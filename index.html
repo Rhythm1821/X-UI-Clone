@@ -12,64 +12,77 @@
 </head>
 
 <body class="bg-black text-white">
-    <div class="container flex mx-auto my-4">
+    <div class="flex mx-auto my-4">
 
         <!-- Left -->
-        <div class="first w-[80%]">
-            <div class="logo invert my-4">
-                <svg viewBox="0 0 24 24" aria-hidden="true"
-                    class="m-auto w-8 r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-lrsllp r-1nao33i r-16y2uox r-8kz0gk">
-                    <g>
-                        <path
-                            d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z">
-                        </path>
-                    </g>
-                </svg>
-            </div>
+        <div class="first w-[20%] lg:w-[60%]">
+            <div class="sidebar flex justify-start items-center flex-col sticky top-0">
+                <ul class="flex flex-col items-start text-2xl w-1/2 ">
+                    <li
+                        class="flex justify-start items-center gap-3 w-fit hover:bg-gray-900 hover:rounded-full px-5 py-3 cursor-pointer">
+                        <div class="logo flex items-start invert my-4">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"
+                                class="m-auto w-8 r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-lrsllp r-1nao33i r-16y2uox r-8kz0gk">
+                                <g>
+                                    <path
+                                        d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z">
+                                    </path>
+                                </g>
+                            </svg>
+                        </div>
+                    </li>
+                    <li
+                        class="flex justify-start items-center gap-3 w-fit hover:bg-gray-900 hover:rounded-full px-5 py-3 cursor-pointer">
+                        <span class="material-symbols-outlined text-2xl">home</span> <span class="hidden lg:block">Home</span>
+                    </li>
+                    <li
+                        class="flex justify-start items-center gap-3 w-fit hover:bg-gray-900 hover:rounded-full px-5 py-3 cursor-pointer">
+                        <span class="material-symbols-outlined text-2xl">explore</span><span class="hidden lg:block">Explore</span>
+                    </li>
+                    <li
+                        class="flex justify-start items-center gap-3 w-fit hover:bg-gray-900 hover:rounded-full px-5 py-3 cursor-pointer">
+                        <span class="material-symbols-outlined text-2xl">notifications</span><span class="hidden lg:block">Notifications</span>
+                    </li>
+                    <li
+                        class="flex justify-start items-center gap-3 w-fit hover:bg-gray-900 hover:rounded-full px-5 py-3 cursor-pointer">
+                        <span class="material-symbols-outlined text-2xl">message</span><span class="hidden lg:block">Messages</span>
+                    </li>
+                    <li
+                        class="flex justify-start items-center gap-3 w-fit hover:bg-gray-900 hover:rounded-full px-5 py-3 cursor-pointer">
+                        <span class="material-symbols-outlined text-2xl">bookmark</span><span class="hidden lg:block">Grok</span>
+                    </li>
+                    <li
+                        class="flex justify-start items-center gap-3 w-fit hover:bg-gray-900 hover:rounded-full px-5 py-3 cursor-pointer">
+                        <span class="material-symbols-outlined text-2xl">group</span><span class="hidden lg:block">Community</span>
+                    </li>
+                    <li
+                        class="flex justify-start items-center gap-3 w-fit hover:bg-gray-900 hover:rounded-full px-5 py-3 cursor-pointer">
+                        <span class="material-symbols-outlined text-2xl">person</span><span class="hidden lg:block">Profile</span>
+                    </li>
+                    <li
+                        class="flex justify-start items-center gap-3 w-fit hover:bg-gray-900 hover:rounded-full px-5 py-3 cursor-pointer">
+                        <span class="material-symbols-outlined text-2xl">more</span><span class="hidden lg:block">More</span>
+                    </li>
 
-            <div class="sidebar flex justify-center items-center flex-col">
-                <ul class="flex flex-col text-2xl w-1/2 ">
+                    <!-- For small screens -->
                     <li
-                        class="flex justify-start items-center gap-3 w-fit hover:bg-gray-900 hover:rounded-full px-5 py-3 cursor-pointer">
-                        <span class="material-symbols-outlined text-2xl">home</span> Home
+                        class="flex justify-start items-center gap-3 w-fit bg-blue-600 hover:bg-blue-700 rounded-full p-3 cursor-pointer lg:hidden">
+                        <span class="material-symbols-outlined ">Add</span><span class="hidden lg:block">More</span>
                     </li>
-                    <li
-                        class="flex justify-start items-center gap-3 w-fit hover:bg-gray-900 hover:rounded-full px-5 py-3 cursor-pointer">
-                        <span class="material-symbols-outlined text-2xl">explore</span>Explore
-                    </li>
-                    <li
-                        class="flex justify-start items-center gap-3 w-fit hover:bg-gray-900 hover:rounded-full px-5 py-3 cursor-pointer">
-                        <span class="material-symbols-outlined text-2xl">notifications</span>Notifications
-                    </li>
-                    <li
-                        class="flex justify-start items-center gap-3 w-fit hover:bg-gray-900 hover:rounded-full px-5 py-3 cursor-pointer">
-                        <span class="material-symbols-outlined text-2xl">message</span>Messages
-                    </li>
-                    <li
-                        class="flex justify-start items-center gap-3 w-fit hover:bg-gray-900 hover:rounded-full px-5 py-3 cursor-pointer">
-                        <span class="material-symbols-outlined text-2xl">bookmark</span>Grok
-                    </li>
-                    <li
-                        class="flex justify-start items-center gap-3 w-fit hover:bg-gray-900 hover:rounded-full px-5 py-3 cursor-pointer">
-                        <span class="material-symbols-outlined text-2xl">group</span>Community
-                    </li>
-                    <li
-                        class="flex justify-start items-center gap-3 w-fit hover:bg-gray-900 hover:rounded-full px-5 py-3 cursor-pointer">
-                        <span class="material-symbols-outlined text-2xl">person</span>Profile
-                    </li>
-                    <li
-                        class="flex justify-start items-center gap-3 w-fit hover:bg-gray-900 hover:rounded-full px-5 py-3 cursor-pointer">
-                        <span class="material-symbols-outlined text-2xl">more</span>More
+
+                    <!-- For large screens -->
+                    <li class="hidden lg:block">
+                        <button
+                            class="bg-blue-600 text-white px-16 py-3 rounded-3xl text-xl font-bold md:w-auto lg:w-full md:ml-auto lg:ml-0 md:px-5 lg:px-24">
+                            Post
+                        </button>
                     </li>
                 </ul>
-                <div class="button">
-                    <button class="bg-blue-600 text-white px-24 py-3 rounded-3xl text-xl font-bold">Post</button>
-                </div>
             </div>
         </div>
 
         <!-- Main -->
-        <div class="second w-full border-[1px] border-x-white border-y-black">
+        <div class="second w-full border-[1px] border-x-gray-800 border-y-black">
             <div class="top flex p-2 relative">
                 <div class="absolute w-12 h-1 bottom-0 left-[18%] bg-blue-700"></div>
                 <div class="left flex justify-center font-bold w-1/2 bg-green-6001">For you</div>
@@ -119,6 +132,7 @@
                     <div class="flex">
                         <div class="image m-4">
                             <img class="rounded-full"
+                                width="80px"
                                 src="https://pbs.twimg.com/profile_images/1739274716983242752/ERXwmT2T_normal.jpg"
                                 alt="">
                         </div>
@@ -159,6 +173,7 @@
                     <div class="flex">
                         <div class="image m-4">
                             <img class="rounded-full"
+                                width="80px"
                                 src="https://pbs.twimg.com/profile_images/1739274716983242752/ERXwmT2T_normal.jpg"
                                 alt="">
                         </div>
@@ -167,12 +182,10 @@
                                 <span class="font-bold hover:underline">Y Combinator</span>
                                 <div class="text-gray-500">@ycombinator · 25m</div>
                             </div>
-                            <div>YC S24's @TryKairo builds AI agents that help deliver patient care at a fraction of the
-                                cost. Customers use Kairo in their EHR to check in with patients, fill clinician
-                                calendars, and call other providers.</div>
+                            <div>I always wondered how Amazon and other e-commerce show common questions people ask and their responses at the end of the product page. Because two people can ask the same question in different ways.</div>
                             <div class="post-img m-4">
                                 <img class="rounded-lg"
-                                    src="https://pbs.twimg.com/card_img/1826855034057097217/7WSLuStd?format=jpg&name=small"
+                                    src="https://pbs.twimg.com/media/GVJ0N6sWEAAk3uF?format=png&name=small"
                                     alt="">
                             </div>
                             <div class="icons flex m-4 justify-around text-gray-600">
@@ -199,6 +212,7 @@
                     <div class="flex">
                         <div class="image m-4">
                             <img class="rounded-full"
+                                width="80px"
                                 src="https://pbs.twimg.com/profile_images/1739274716983242752/ERXwmT2T_normal.jpg"
                                 alt="">
                         </div>
@@ -207,12 +221,10 @@
                                 <span class="font-bold hover:underline">Y Combinator</span>
                                 <div class="text-gray-500">@ycombinator · 25m</div>
                             </div>
-                            <div>YC S24's @TryKairo builds AI agents that help deliver patient care at a fraction of the
-                                cost. Customers use Kairo in their EHR to check in with patients, fill clinician
-                                calendars, and call other providers.</div>
+                            <div>Sometime back, I read a paper on how Twitter implemented its user recommendation system, and three things I found interesting are</div>
                             <div class="post-img m-4">
                                 <img class="rounded-lg"
-                                    src="https://pbs.twimg.com/card_img/1826855034057097217/7WSLuStd?format=jpg&name=small"
+                                    src="https://pbs.twimg.com/media/GVgclMdWYAA950i?format=png&name=small"
                                     alt="">
                             </div>
                             <div class="icons flex m-4 justify-around text-gray-600">
@@ -239,6 +251,7 @@
                     <div class="flex">
                         <div class="image m-4">
                             <img class="rounded-full"
+                                width="80px"
                                 src="https://pbs.twimg.com/profile_images/1739274716983242752/ERXwmT2T_normal.jpg"
                                 alt="">
                         </div>
@@ -247,12 +260,10 @@
                                 <span class="font-bold hover:underline">Y Combinator</span>
                                 <div class="text-gray-500">@ycombinator · 25m</div>
                             </div>
-                            <div>YC S24's @TryKairo builds AI agents that help deliver patient care at a fraction of the
-                                cost. Customers use Kairo in their EHR to check in with patients, fill clinician
-                                calendars, and call other providers.</div>
+                            <div>7 nanoseconds is the median latency of NanoLog and it can write 80 million log messages every second 🤯.</div>
                             <div class="post-img m-4">
                                 <img class="rounded-lg"
-                                    src="https://pbs.twimg.com/card_img/1826855034057097217/7WSLuStd?format=jpg&name=small"
+                                    src="https://pbs.twimg.com/media/GVtzZgoXQAAhImT?format=png&name=small"
                                     alt="">
                             </div>
                             <div class="icons flex m-4 justify-around text-gray-600">
@@ -279,43 +290,45 @@
         </div>
 
         <!-- Right -->
-        <div class="third w-3/4 flex flex-col items-center mx-4">
-            <!-- Search Bar -->
-            <div class="search m-3 w-full flex justify-center">
-                <input type="text" placeholder="Search"
-                    class="w-full max-w-lg rounded-full bg-gray-900 text-white px-4 py-2">
-            </div>
-
-            <!-- What's happening Section -->
-            <div class="whats m-3 bg-gray-900 w-full max-w-lg py-5 rounded-xl">
-                <h1 class="text-xl font-bold px-3">What's happening</h1>
-                <div class="item cursor-pointer px-3 p-3 hover:bg-gray-800">
-                    <div class="text-sm text-gray-200">Trending in India</div>
-                    <div class="font-bold">Coding</div>
-                    <div class="text-sm text-gray-200">40.2k Posts</div>
+        <div class="third w-[70%] hidden md:block">
+            <div class="w-3/4 flex flex-col items-center mx-4 sticky top-0">
+                <!-- Search Bar -->
+                <div class="search m-3 w-full flex justify-center">
+                    <input type="text" placeholder="Search"
+                        class="w-full max-w-lg rounded-full bg-gray-900 text-white px-4 py-2">
                 </div>
-
-                <div class="item cursor-pointer px-3 p-3 hover:bg-gray-800">
-                    <div class="text-sm text-gray-200">Trending in India</div>
-                    <div class="font-bold">#Cricker</div>
-                    <div class="text-sm text-gray-200">40.2k Posts</div>
+    
+                <!-- What's happening Section -->
+                <div class="whats m-3 bg-gray-900 w-full max-w-lg py-5 rounded-xl">
+                    <h1 class="text-xl font-bold px-3">What's happening</h1>
+                    <div class="item cursor-pointer px-3 p-3 hover:bg-gray-800">
+                        <div class="text-sm text-gray-200">Trending in India</div>
+                        <div class="font-bold">Coding</div>
+                        <div class="text-sm text-gray-200">40.2k Posts</div>
+                    </div>
+    
+                    <div class="item cursor-pointer px-3 p-3 hover:bg-gray-800">
+                        <div class="text-sm text-gray-200">Trending in India</div>
+                        <div class="font-bold">#Cricker</div>
+                        <div class="text-sm text-gray-200">40.2k Posts</div>
+                    </div>
+    
+                    <div class="item cursor-pointer px-3 p-3 hover:bg-gray-800">
+                        <div class="text-sm text-gray-200">Trending in India</div>
+                        <div class="font-bold">#Cooking</div>
+                        <div class="text-sm text-gray-200">40.2k Posts</div>
+                    </div>
                 </div>
-
-                <div class="item cursor-pointer px-3 p-3 hover:bg-gray-800">
-                    <div class="text-sm text-gray-200">Trending in India</div>
-                    <div class="font-bold">#Cooking</div>
-                    <div class="text-sm text-gray-200">40.2k Posts</div>
-                </div>
-            </div>
-
-            <div class="whats m-3 bg-gray-900 w-full max-w-lg py-5 rounded-xl">
-                <h1 class="text-xl font-bold px-3">Who to follow</h1>
-                <div class="item px-3 p-3 space-y-4">
-                    <div class="font-bold text-gray-200 cursor-pointer hover:bg-gray-800">Salman Khan</div>
-                    <div class="font-bold text-gray-200 cursor-pointer hover:bg-gray-800">Akshay Kumar</div>
-                    <div class="font-bold text-gray-200 cursor-pointer hover:bg-gray-800">Raj Kumar</div>
-
-                    <div class="text-blue-600 ">Show More</div>
+    
+                <div class="whats m-3 bg-gray-900 w-full max-w-lg py-5 rounded-xl">
+                    <h1 class="text-xl font-bold px-3">Who to follow</h1>
+                    <div class="item px-3 p-3 space-y-4">
+                        <div class="font-bold text-gray-200 cursor-pointer hover:bg-gray-800">Salman Khan</div>
+                        <div class="font-bold text-gray-200 cursor-pointer hover:bg-gray-800">Akshay Kumar</div>
+                        <div class="font-bold text-gray-200 cursor-pointer hover:bg-gray-800">Raj Kumar</div>
+    
+                        <div class="text-blue-600 ">Show More</div>
+                    </div>
                 </div>
             </div>
         </div>
